@@ -1,0 +1,22 @@
+{
+  "name": "BioEthic Earth",
+  "short_name": "BioEthic",
+  "description": "Advocating for ethical research alternatives and the protection of wild primate populations in the Philippines.",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#fdfcf8",
+  "theme_color": "#a1d99b",
+  "icons": [
+    {
+      "src": "icons/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
