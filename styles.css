@@ -426,3 +426,21 @@ main { flex-grow: 1; }
   .mission { padding: 8rem 1.5rem; }
   .mission-head .lead { font-size: 1.5rem; }
 }
+
+.card-content-text {
+  font-size: 0.875rem;
+  color: rgba(30, 37, 30, 0.7);
+  line-height: 1.625;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.card-content-text strong {
+  color: var(--foreground);
+}
+.sub-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0.25rem 0;
+}
