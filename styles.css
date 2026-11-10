@@ -444,3 +444,134 @@ main { flex-grow: 1; }
   gap: 0.25rem;
   margin: 0.25rem 0;
 }
+#advocacy-action {
+  background-color: transparent;
+  padding: 4rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-family: var(--font-sans, "Inter", sans-serif);
+  color: var(--foreground, #1e251e);
+}
+
+#advocacy-action .advocacy-header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+}
+
+#advocacy-action .advocacy-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-foreground, #0d2b09);
+  background-color: var(--primary, #a1d99b);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  border: 1px solid var(--border-mid);
+}
+
+#advocacy-action h2 {
+  font-family: var(--font-serif, "Lora", Georgia, serif);
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 0.75rem;
+  color: var(--foreground, #1e251e);
+}
+
+#advocacy-action .advocacy-subtitle {
+  color: #555c55;
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+#advocacy-action .advocacy-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+#advocacy-action .advocacy-card {
+  background-color: var(--card, #ffffff);
+  border: 1px solid var(--border-mid, rgba(0, 0, 0, 0.1));
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 320px;
+  box-shadow: 0 4px 6px -1px var(--border-soft, rgba(0, 0, 0, 0.05));
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#advocacy-action .card-image-wrapper {
+  height: 160px;
+  position: relative;
+  background-color: var(--muted, #f4f3ed);
+}
+
+#advocacy-action .card-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#advocacy-action .card-image-tag {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.5rem;
+  font-size: 9px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2px 6px;
+  border-radius: 4px;
+  color: #ffffff;
+}
+
+#advocacy-action .card-content {
+  padding: 1.5rem;
+}
+
+#advocacy-action .card-tag {
+  color: var(--primary-dark, #8cc486);
+  font-weight: bold;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.25rem;
+}
+
+#advocacy-action .card-content h3 {
+  font-family: var(--font-serif, "Lora", Georgia, serif);
+  font-weight: bold;
+  font-size: 1.125rem;
+  color: var(--foreground, #1e251e);
+  margin-bottom: 0.5rem;
+}
+
+#advocacy-action .card-content p,
+#advocacy-action .card-content ul {
+  font-size: 0.75rem;
+  color: #555c55;
+  line-height: 1.5;
+}
+
+#advocacy-action .card-content ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+#advocacy-action .card-link {
+  color: var(--primary-dark, #8cc486);
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+#advocacy-action .advocacy-footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-mid, rgba(0, 0, 0, 0.1));
+  text-align: center;
+  font-size: 0.75rem;
+  color: #555c55;
+}
