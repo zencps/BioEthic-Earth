@@ -1,3 +1,16 @@
+(function () {
+  var cleanPath = window.location.pathname
+    .replace(/\/index\.html$/, '/')
+    .replace(/\.html$/, '');
+  if (cleanPath !== window.location.pathname) {
+    window.history.replaceState(
+      null,
+      '',
+      cleanPath + window.location.search + window.location.hash
+    );
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.getElementById('menu-toggle');
   var mobileNav = document.getElementById('mobile-nav');
