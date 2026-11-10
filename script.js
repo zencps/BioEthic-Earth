@@ -1,15 +1,15 @@
-(function () {
-  var cleanPath = window.location.pathname
-    .replace(/\/index\.html$/, '/')
-    .replace(/\.html$/, '');
-  if (cleanPath !== window.location.pathname) {
-    window.history.replaceState(
-      null,
-      '',
-      cleanPath + window.location.search + window.location.hash
-    );
-  }
-})();
+var cleanPath = window.location.pathname
+  .replace(/\/index\.html$/, '/')
+  .replace(/\.html$/, '');
+var baseDir = cleanPath.endsWith('/') ? cleanPath : cleanPath + '/';
+var hashId = window.location.hash ? window.location.hash.slice(1) : '';
+if (hashId) {
+  var initialTarget = document.getElementById(hashId);
+  if (initialTarget) initialTarget.scrollIntoView();
+  window.history.replaceState(null, '', baseDir + hashId);
+} else if (cleanPath !== window.location.pathname) {
+  window.history.replaceState(null, '', cleanPath + window.location.search);
+}
 
 document.addEventListener('DOMContentLoaded', function () {
   var toggle = document.getElementById('menu-toggle');
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth' });
-        history.replaceState(null, '', '#' + id);
+        window.history.replaceState(null, '', baseDir + id);
       }
     });
   });
